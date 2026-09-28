@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+
+  --color-paper: #f6f2ea;
+  --color-paper-deep: #efe9dd;
+  --color-card: #ffffff;
+  --color-ink: #1b2330;
+  --color-ink-2: #4a5261;
+  --color-muted: #7c828c;
+  --color-line: #e4dfd4;
+  --color-line-strong: #cfc8b9;
+  --color-accent: #33557d;
+  --color-accent-soft: #e8eef5;
+
+  /* platform series colours (validated: CVD ΔE 19.4 on white) */
+  --color-ig: #2a64a8;
+  --color-ig-soft: #e6eef8;
+  --color-tt: #c2653a;
+  --color-tt-soft: #f8ebe4;
+
+  /* status: always paired with a label */
+  --color-good: #2f7a4b;
+  --color-good-soft: #e6f2ea;
+  --color-warn: #a8781c;
+  --color-warn-soft: #f7efdc;
+  --color-bad: #b0493b;
+  --color-bad-soft: #f7e6e3;
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-paper);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  ::selection {
+    background: var(--color-accent-soft);
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@utility eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+/* Recharts: keep chrome recessive */
+.recharts-cartesian-axis-tick-value {
+  fill: var(--color-muted);
+  font-size: 11px;
+}
+.recharts-cartesian-grid line {
+  stroke: var(--color-line);
+}
+.recharts-tooltip-cursor {
+  fill: rgba(27, 35, 48, 0.04);
+}

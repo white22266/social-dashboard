@@ -1,0 +1,419 @@
+{
+ "_note": "Primary topic and caption-hook type per post, assigned by reading each caption (2026-09-28). Edit freely. Posts missing here are classified by keyword rules in src/lib/classify.ts.",
+ "topics": [
+  {
+   "id": "ai-future-of-work",
+   "label": "AI & the future of work",
+   "description": "Urgency and career-advantage framing: AI is already here, the people who know AI win, AI literacy in 2026."
+  },
+  {
+   "id": "ai-how-to",
+   "label": "AI how-to & explainers",
+   "description": "Practical, teachable AI content: prompting fixes, habits, agent stacks, concept explainers."
+  },
+  {
+   "id": "ai-tool-choice",
+   "label": "Choosing the right AI tool",
+   "description": "Which AI to use for which job; free vs paid; building the right stack."
+  },
+  {
+   "id": "course-promo",
+   "label": "Courses & corporate training",
+   "description": "Posts whose main job is selling AINCHORS classes, courses or corporate training."
+  },
+  {
+   "id": "corporate-escape",
+   "label": "Corporate exit & job security",
+   "description": "Leaving the 9-to-5, redundancy, bank layoffs, loss of purpose at work."
+  },
+  {
+   "id": "work-life-balance",
+   "label": "Work-life balance & lifestyle",
+   "description": "Balance, busyness, choosing your lifestyle."
+  },
+  {
+   "id": "mindset",
+   "label": "Mindset & motivation",
+   "description": "Comfort zone, daily choices, growth quotes, motivational reels."
+  },
+  {
+   "id": "travel-bts",
+   "label": "Events, travel & behind the scenes",
+   "description": "GITEX, Abu Dhabi, Riyadh training trip, trainer life."
+  },
+  {
+   "id": "personal-seasonal",
+   "label": "Personal & seasonal",
+   "description": "Family story, festival greeting."
+  }
+ ],
+ "hooks": [
+  {
+   "id": "question",
+   "label": "Question",
+   "description": "Opens by asking the viewer a direct question."
+  },
+  {
+   "id": "bold-claim",
+   "label": "Bold / contrarian claim",
+   "description": "A strong assertion or myth-bust (\"Most people think…\", \"Free AI isn't always better\")."
+  },
+  {
+   "id": "problem",
+   "label": "Problem / pain point",
+   "description": "Names a cost, mistake or frustration the viewer has."
+  },
+  {
+   "id": "benefit",
+   "label": "Benefit / promise",
+   "description": "Promises an outcome, often with a number (\"3 AI habits that will make you 10x…\")."
+  },
+  {
+   "id": "curiosity",
+   "label": "Curiosity / imagine",
+   "description": "Imagine…, quiz, POV set-ups that open a loop."
+  },
+  {
+   "id": "personal-story",
+   "label": "Personal story",
+   "description": "First-person experience."
+  },
+  {
+   "id": "news-trend",
+   "label": "News / statistic / trend",
+   "description": "Opens with an event, figure or trend."
+  },
+  {
+   "id": "quote",
+   "label": "Inspirational quote",
+   "description": "Aphorism-style motivational line."
+  },
+  {
+   "id": "no-hook",
+   "label": "No hook",
+   "description": "Hashtags only, greeting, or production notes pasted as caption."
+  }
+ ],
+ "posts": {
+  "ig_DOF5wCvgMHS": {
+   "topic": "corporate-escape",
+   "hook": "question"
+  },
+  "ig_DOKzuayANr1": {
+   "topic": "corporate-escape",
+   "hook": "personal-story"
+  },
+  "ig_DONtiJYADfs": {
+   "topic": "mindset",
+   "hook": "problem"
+  },
+  "ig_DObNQmAkieu": {
+   "topic": "mindset",
+   "hook": "quote"
+  },
+  "ig_DOde6i5kslH": {
+   "topic": "corporate-escape",
+   "hook": "question"
+  },
+  "ig_DOdf-UAEl98": {
+   "topic": "corporate-escape",
+   "hook": "news-trend"
+  },
+  "ig_DOx3eTSjxbZ": {
+   "topic": "corporate-escape",
+   "hook": "news-trend"
+  },
+  "ig_DO5qRudEvjG": {
+   "topic": "work-life-balance",
+   "hook": "question"
+  },
+  "ig_DPA7BmVko9K": {
+   "topic": "work-life-balance",
+   "hook": "bold-claim"
+  },
+  "ig_DPA7JPRErbj": {
+   "topic": "work-life-balance",
+   "hook": "bold-claim"
+  },
+  "ig_DPBsShdEmYl": {
+   "topic": "work-life-balance",
+   "hook": "bold-claim"
+  },
+  "ig_DPCN5eAEsi5": {
+   "topic": "work-life-balance",
+   "hook": "bold-claim"
+  },
+  "ig_DPEZoo6EumB": {
+   "topic": "work-life-balance",
+   "hook": "bold-claim"
+  },
+  "ig_DPHxJ9WE2XU": {
+   "topic": "work-life-balance",
+   "hook": "bold-claim"
+  },
+  "ig_DPIpgoQDkN7": {
+   "topic": "work-life-balance",
+   "hook": "question"
+  },
+  "ig_DPY1_t7DGNs": {
+   "topic": "mindset",
+   "hook": "quote"
+  },
+  "ig_DPZA67WDTZI": {
+   "topic": "mindset",
+   "hook": "quote"
+  },
+  "ig_DPdJY-IEnhB": {
+   "topic": "mindset",
+   "hook": "quote"
+  },
+  "ig_DPd8vD3CQ4y": {
+   "topic": "mindset",
+   "hook": "bold-claim"
+  },
+  "ig_DPeAbmdiarq": {
+   "topic": "mindset",
+   "hook": "bold-claim"
+  },
+  "ig_DPhKqwrE7N4": {
+   "topic": "mindset",
+   "hook": "quote"
+  },
+  "ig_DPhL3n7kwXO": {
+   "topic": "mindset",
+   "hook": "quote"
+  },
+  "ig_DPhMXn9Ez8i": {
+   "topic": "mindset",
+   "hook": "question"
+  },
+  "ig_DPhNSjzE47a": {
+   "topic": "mindset",
+   "hook": "quote"
+  },
+  "ig_DP4_rbskpSK": {
+   "topic": "travel-bts",
+   "hook": "personal-story"
+  },
+  "ig_DP9Qzabks_Q": {
+   "topic": "travel-bts",
+   "hook": "personal-story"
+  },
+  "ig_DSKpHgdCMAK": {
+   "topic": "travel-bts",
+   "hook": "no-hook"
+  },
+  "ig_DSMlUrlCFJm": {
+   "topic": "travel-bts",
+   "hook": "curiosity"
+  },
+  "ig_DSMpmBKCAMS": {
+   "topic": "travel-bts",
+   "hook": "curiosity"
+  },
+  "ig_DSVCa0ViM8W": {
+   "topic": "travel-bts",
+   "hook": "no-hook"
+  },
+  "ig_DZefnoTpw3j": {
+   "topic": "course-promo",
+   "hook": "benefit"
+  },
+  "ig_DZeimNMJEHk": {
+   "topic": "course-promo",
+   "hook": "bold-claim"
+  },
+  "ig_DZmUliEJKPM": {
+   "topic": "course-promo",
+   "hook": "benefit"
+  },
+  "ig_DZrioHUpxkY": {
+   "topic": "ai-future-of-work",
+   "hook": "bold-claim"
+  },
+  "ig_DZrsr2mJ66y": {
+   "topic": "ai-future-of-work",
+   "hook": "benefit"
+  },
+  "ig_DZrwCzEpUB3": {
+   "topic": "course-promo",
+   "hook": "bold-claim"
+  },
+  "ig_DZuwIlsppBu": {
+   "topic": "ai-tool-choice",
+   "hook": "bold-claim"
+  },
+  "ig_DZwcDY8pZO8": {
+   "topic": "ai-tool-choice",
+   "hook": "bold-claim"
+  },
+  "ig_DZ3xd9yJbfi": {
+   "topic": "ai-tool-choice",
+   "hook": "bold-claim"
+  },
+  "ig_DZ3-08vJzLD": {
+   "topic": "course-promo",
+   "hook": "bold-claim"
+  },
+  "ig_DZ4An2VCbDJ": {
+   "topic": "personal-seasonal",
+   "hook": "personal-story"
+  },
+  "ig_DZ7VqjTp7_u": {
+   "topic": "ai-future-of-work",
+   "hook": "benefit"
+  },
+  "ig_DZ9ii6jh3m_": {
+   "topic": "course-promo",
+   "hook": "question"
+  },
+  "ig_DZ95es3OXbI": {
+   "topic": "course-promo",
+   "hook": "problem"
+  },
+  "ig_DZ9_9g3JjwP": {
+   "topic": "course-promo",
+   "hook": "bold-claim"
+  },
+  "ig_DaAc_NupglP": {
+   "topic": "ai-future-of-work",
+   "hook": "news-trend"
+  },
+  "ig_DaAhD5ep5VS": {
+   "topic": "course-promo",
+   "hook": "bold-claim"
+  },
+  "ig_DaAjxsQJlUP": {
+   "topic": "course-promo",
+   "hook": "problem"
+  },
+  "ig_DaRlBaKJboP": {
+   "topic": "ai-how-to",
+   "hook": "curiosity"
+  },
+  "ig_DahbtfnJsdT": {
+   "topic": "ai-how-to",
+   "hook": "problem"
+  },
+  "ig_Dahb9AMJXry": {
+   "topic": "ai-how-to",
+   "hook": "curiosity"
+  },
+  "ig_DbVy0VgpbUb": {
+   "topic": "ai-how-to",
+   "hook": "benefit"
+  },
+  "ig_DbX5MjSpBJq": {
+   "topic": "ai-future-of-work",
+   "hook": "question"
+  },
+  "ig_DbcsbITpyVi": {
+   "topic": "mindset",
+   "hook": "no-hook"
+  },
+  "ig_DbeIUn4zOmf": {
+   "topic": "mindset",
+   "hook": "no-hook"
+  },
+  "ig_DbsHZYmJEs_": {
+   "topic": "ai-tool-choice",
+   "hook": "benefit"
+  },
+  "ig_Dbxelf3p5nr": {
+   "topic": "course-promo",
+   "hook": "problem"
+  },
+  "ig_Dbxexx7J71r": {
+   "topic": "course-promo",
+   "hook": "benefit"
+  },
+  "ig_Dbxe5S3Jjtc": {
+   "topic": "ai-tool-choice",
+   "hook": "bold-claim"
+  },
+  "ig_DdsjSV8plsP": {
+   "topic": "personal-seasonal",
+   "hook": "no-hook"
+  },
+  "tt_7674830466993753365": {
+   "topic": "ai-how-to",
+   "hook": "benefit"
+  },
+  "tt_7674907785682750740": {
+   "topic": "ai-how-to",
+   "hook": "curiosity"
+  },
+  "tt_7674976862984080661": {
+   "topic": "ai-tool-choice",
+   "hook": "benefit"
+  },
+  "tt_7674991271806586133": {
+   "topic": "course-promo",
+   "hook": "news-trend"
+  },
+  "tt_7675194865793256725": {
+   "topic": "course-promo",
+   "hook": "problem"
+  },
+  "tt_7675197899109584148": {
+   "topic": "ai-how-to",
+   "hook": "curiosity"
+  },
+  "tt_7675200156626849044": {
+   "topic": "ai-future-of-work",
+   "hook": "question"
+  },
+  "tt_7675202649444224277": {
+   "topic": "ai-future-of-work",
+   "hook": "news-trend"
+  },
+  "tt_7675205130404384021": {
+   "topic": "ai-tool-choice",
+   "hook": "bold-claim"
+  },
+  "tt_7675206918733909269": {
+   "topic": "course-promo",
+   "hook": "benefit"
+  },
+  "tt_7675621208733420808": {
+   "topic": "ai-future-of-work",
+   "hook": "bold-claim"
+  },
+  "tt_7675625595388054802": {
+   "topic": "ai-future-of-work",
+   "hook": "bold-claim"
+  },
+  "tt_7675633272847633672": {
+   "topic": "ai-future-of-work",
+   "hook": "news-trend"
+  },
+  "tt_7675652936562822408": {
+   "topic": "course-promo",
+   "hook": "problem"
+  },
+  "tt_7675681670456020232": {
+   "topic": "course-promo",
+   "hook": "bold-claim"
+  },
+  "tt_7675946301724314898": {
+   "topic": "ai-tool-choice",
+   "hook": "bold-claim"
+  },
+  "tt_7675948143787134215": {
+   "topic": "course-promo",
+   "hook": "benefit"
+  },
+  "tt_7676032862415506695": {
+   "topic": "course-promo",
+   "hook": "problem"
+  },
+  "tt_7676052264208928018": {
+   "topic": "ai-how-to",
+   "hook": "bold-claim"
+  },
+  "tt_7676055514630884615": {
+   "topic": "ai-how-to",
+   "hook": "problem"
+  }
+ }
+}
