@@ -1,21 +1,19 @@
 /**
  * POST /refresh  { "password": "..." }
- *   202 { ok, startedAt }                       refresh requested (GitHub "Request refresh" workflow dispatched)
+ *   202 { ok, startedAt }                       refresh requested
  *   401 { error: "wrong_password", attemptsLeft }
  *   429 { error: "locked", retryAfterSeconds }  too many wrong passwords from this IP
  *   429 { error: "cooldown", retryAfterSeconds, startedAt }  a refresh was requested in the last 10 minutes
- *   502 { error: "github_failed", status }
+ *
+ * GET /pending  → { requestedAt }               polled every minute by the owner's Mac
+ *   (scripts/refresh_watcher.sh), which runs the refresh when requestedAt is newer than the last one it handled.
  *
  * The password is only ever compared here (a Worker secret); it never appears in the website code.
- * The owner's Mac watches for the dispatched workflow run and performs the actual refresh.
  */
 
 interface Env {
   GUARD: KVNamespace
   REFRESH_PASSWORD: string
-  GITHUB_TOKEN: string
-  GITHUB_REPO: string
-  WORKFLOW: string
   ALLOWED_ORIGINS: string
 }
 
@@ -42,7 +40,7 @@ export default {
     const allowed = env.ALLOWED_ORIGINS.split(',').map((s) => s.trim())
     const cors: Record<string, string> = {
       'Access-Control-Allow-Origin': allowed.includes(origin) ? origin : allowed[0],
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type',
       Vary: 'Origin',
     }
@@ -50,6 +48,9 @@ export default {
       new Response(JSON.stringify(body), { status, headers: { ...cors, 'Content-Type': 'application/json', 'Cache-Control': 'no-store' } })
 
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors })
+    if (url.pathname === '/pending' && req.method === 'GET') {
+      return json(200, { requestedAt: await env.GUARD.get('requested_at') })
+    }
     if (url.pathname !== '/refresh' || req.method !== 'POST') return json(404, { error: 'not_found' })
     if (!allowed.includes(origin)) return json(403, { error: 'forbidden_origin' })
 
@@ -82,19 +83,9 @@ export default {
       })
     }
 
-    const gh = await fetch(`https://api.github.com/repos/${env.GITHUB_REPO}/actions/workflows/${env.WORKFLOW}/dispatches`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${env.GITHUB_TOKEN}`,
-        Accept: 'application/vnd.github+json',
-        'X-GitHub-Api-Version': '2022-11-28',
-        'User-Agent': 'social-dashboard-refresh-worker',
-      },
-      body: JSON.stringify({ ref: 'main' }),
-    })
-    if (gh.status !== 204) return json(502, { error: 'github_failed', status: gh.status })
-
+    const startedAt = new Date(now).toISOString()
+    await env.GUARD.put('requested_at', startedAt)
     await env.GUARD.put('last_trigger', String(now), { expirationTtl: COOLDOWN_SECONDS })
-    return json(202, { ok: true, startedAt: new Date(now).toISOString() })
+    return json(202, { ok: true, startedAt })
   },
 } satisfies ExportedHandler<Env>

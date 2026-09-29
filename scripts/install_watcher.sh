@@ -10,10 +10,10 @@ if [ "${1:-}" = "--uninstall" ]; then
   rm -f "$PLIST"; echo "removed $LABEL"; exit 0
 fi
 
-# start from the current latest request so old runs are not replayed
+# start from the current request (if any) so an old one is not replayed
 mkdir -p "$HOME/.social-dashboard-refresh"
-PATH="$HOME/homebrew/bin:$PATH" gh run list -R white22266/social-dashboard --workflow request-refresh.yml --limit 1 \
-  --json databaseId --jq '.[0].databaseId // ""' > "$HOME/.social-dashboard-refresh/last_run_id" 2>/dev/null || true
+curl -sf --max-time 20 https://social-dashboard-refresh.social-dashboard-refresh-worker.workers.dev/pending \
+  | python3 -c "import json,sys; print(json.load(sys.stdin).get('requestedAt') or '')" > "$HOME/.social-dashboard-refresh/last_request" 2>/dev/null || true
 
 mkdir -p "$HOME/Library/LaunchAgents" "$HOME/Library/Logs"
 cat > "$PLIST" <<EOF

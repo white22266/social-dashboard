@@ -2,12 +2,11 @@
 
 There are two ways to refresh https://dashboard.angiefoong.com:
 
-1. **Website button (normal path, fully automatic).** "Refresh data & AI analysis" on the site opens
-   the *Request refresh* GitHub workflow; the owner presses **Run workflow**. Within a minute the Mac's
-   launchd watcher (`scripts/refresh_watcher.sh`, installed by `scripts/install_watcher.sh`) runs
-   `scripts/refresh.sh`: Apify scrape → Ollama (Kimi K3, thinking) rewrites `src/data/insights.json` →
-   `scripts/validate_insights.py` rejects any number not found in the computed facts → build → push.
-   Log: `~/Library/Logs/social-dashboard-refresh.log`.
+1. **Website button (normal path, fully automatic).** "Refresh data & AI analysis" on the site asks for
+   the password (checked by the Cloudflare Worker in `worker/`). Within a minute the Mac's launchd watcher
+   (`scripts/refresh_watcher.sh`) sees the request and runs `scripts/refresh.sh`: Apify scrape → Ollama
+   (Kimi K3, thinking) rewrites `src/data/insights.json` → `scripts/validate_insights.py` rejects any number
+   not found in the computed facts → build → push. Log: `~/Library/Logs/social-dashboard-refresh.log`.
 2. **Claude review (this playbook).** The "Refresh social dashboard" task in the Claude app, for a
    deeper hand-checked rewrite. Follow the steps below.
 

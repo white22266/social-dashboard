@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
-import { REFRESH_API, REFRESH_FALLBACK_URL } from '../lib/config'
+import { REFRESH_API } from '../lib/config'
 
 type Phase =
   | { kind: 'idle' }
@@ -40,14 +40,6 @@ export default function RefreshControl({ collectedAt }: { collectedAt: string })
     const id = setInterval(check, POLL_MS)
     return () => clearInterval(id)
   }, [startedAt, collectedAt])
-
-  if (!REFRESH_API) {
-    return (
-      <a href={REFRESH_FALLBACK_URL} target="_blank" rel="noreferrer" className={BUTTON}>
-        <span aria-hidden>↻</span> Refresh data &amp; AI analysis
-      </a>
-    )
-  }
 
   const open = () => {
     setPhase((p) => (p.kind === 'error' ? { kind: 'idle' } : p))

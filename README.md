@@ -22,8 +22,12 @@ npx tsx scripts/report.ts   # print every calculated metric in the terminal
 
 ## Refreshing the data
 
-**From the website:** press **Refresh data & AI analysis** → GitHub's *Request refresh* page → **Run workflow**
-(only repository collaborators can). The owner's Mac picks the request up within a minute and runs
+**From the website:** press **Refresh data & AI analysis** and enter the password. The password is checked
+by a small Cloudflare Worker (`worker/`) against its `REFRESH_PASSWORD` secret; it is never in the site code
+or this repository. 5 wrong tries from one IP → 15-minute lock; 10-minute cooldown between refreshes.
+
+A correct password records a refresh request in the Worker. The owner's Mac polls `GET /pending` every
+minute (`scripts/refresh_watcher.sh`, launchd agent installed by `scripts/install_watcher.sh`) and runs
 `scripts/refresh.sh`:
 
 1. `scripts/fetch_apify.sh --full`: Apify scrape (about $0.24 per run; free plan = $5/month)
@@ -31,29 +35,23 @@ npx tsx scripts/report.ts   # print every calculated metric in the terminal
    `glm-5.3:cloud`, override with `OLLAMA_MODELS`) classifies new posts and rewrites `src/data/insights.json`.
    `scripts/validate_insights.py` rejects any draft containing a number that is not in `scripts/facts.ts`
    output; if all drafts fail, the previous commentary is kept and the page says so.
-3. typecheck, lint and build, then commit and push. GitHub Pages redeploys in about a minute.
+3. typecheck, lint and build, then commit and push; GitHub Pages redeploys in about a minute. The page polls
+   `data-version.json` and offers a reload once the new version is live.
 
 The Mac must be on, logged in, with Ollama running. A notification appears when a refresh starts and ends.
-Log: `~/Library/Logs/social-dashboard-refresh.log`. Watcher: `bash scripts/install_watcher.sh`
-(`--uninstall` to remove).
+Log: `~/Library/Logs/social-dashboard-refresh.log`. Remove the watcher with `bash scripts/install_watcher.sh --uninstall`.
 
+Change the password: `cd worker && npx wrangler secret put REFRESH_PASSWORD`.
 By hand: `bash scripts/refresh.sh`. Data only: `bash scripts/fetch_apify.sh --full`.
 
-## Password-protected Refresh button (Cloudflare Worker)
-
-`worker/` is a tiny Cloudflare Worker: the site POSTs the password there, the Worker compares it with the
-`REFRESH_PASSWORD` secret (5 wrong tries per IP → 15-minute lock; 10-minute cooldown between refreshes)
-and, if correct, dispatches the *Request refresh* workflow with a fine-grained `GITHUB_TOKEN` secret
-(this repo only, Actions read/write). The password is never in the site code or this repository.
-The site finds the Worker through `src/lib/config.ts` (`REFRESH_API`).
+### Refresh Worker setup (already done)
 
 ```bash
 cd worker && npm install
 npx wrangler login
-npx wrangler kv namespace create GUARD    # put the id in wrangler.toml
+npx wrangler kv namespace create GUARD    # id goes in wrangler.toml
 npx wrangler deploy
 npx wrangler secret put REFRESH_PASSWORD
-npx wrangler secret put GITHUB_TOKEN
 ```
 
 ## Data rules
