@@ -1,6 +1,7 @@
 {
  "meta": {
-  "collectedAt": "2026-09-28T07:51:55+00:00",
+  "collectedAt": "2026-09-29T05:45:23+00:00",
+  "postsCarriedOver": 0,
   "analysisTimezone": "Asia/Kuala_Lumpur",
   "duplicatesRemoved": 0,
   "accounts": {
@@ -9,7 +10,7 @@
     "profileUrl": "https://www.instagram.com/ainchors.ai.fintech/",
     "source": "apify/instagram-scraper",
     "postsOnProfile": 66,
-    "followers": 2254,
+    "followers": 2253,
     "postsCollected": 60
    },
    "tiktok": {
@@ -38,7 +39,7 @@
    "contentType": "image",
    "views": null,
    "altViews": null,
-   "likes": 1,
+   "likes": 2,
    "comments": 0,
    "shares": null,
    "saves": null,
@@ -47,6 +48,7 @@
    "flags": [
     "views_not_available_for_format"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DdsjSV8plsP.jpg"
@@ -74,6 +76,7 @@
     "corporate"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_DahbtfnJsdT",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7676055514630884615.jpg"
@@ -101,6 +104,7 @@
     "fyppppppppppppppppppppppp"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7676052264208928018.jpg"
@@ -128,6 +132,7 @@
     "fypシ゚viral"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7676032862415506695.jpg"
@@ -155,6 +160,7 @@
     "fypシ゚viral"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_Dbxexx7J71r",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675948143787134215.jpg"
@@ -180,6 +186,7 @@
     "ai"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_DZuwIlsppBu",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675946301724314898.jpg"
@@ -209,6 +216,7 @@
    "flags": [
     "zero_views_reported"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_DZ9_9g3JjwP",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675681670456020232.jpg"
@@ -236,6 +244,7 @@
     "corporate"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_Dbxelf3p5nr",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675652936562822408.jpg"
@@ -265,6 +274,7 @@
    "flags": [
     "zero_views_reported"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_DaAc_NupglP",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675633272847633672.jpg"
@@ -294,6 +304,7 @@
    "flags": [
     "zero_views_reported"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675625595388054802.jpg"
@@ -320,6 +331,7 @@
     "aiskills"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675621208733420808.jpg"
@@ -349,6 +361,7 @@
     "businessgrowth"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675206918733909269.jpg"
@@ -375,6 +388,7 @@
     "aiskills"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_DZwcDY8pZO8",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675205130404384021.jpg"
@@ -402,6 +416,7 @@
     "aitraining"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675202649444224277.jpg"
@@ -428,6 +443,7 @@
     "fypp"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_DbX5MjSpBJq",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675200156626849044.jpg"
@@ -456,6 +472,7 @@
    "flags": [
     "zero_views_reported"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_Dahb9AMJXry",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675197899109584148.jpg"
@@ -481,6 +498,7 @@
     "fyp"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_DZ95es3OXbI",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7675194865793256725.jpg"
@@ -507,6 +525,7 @@
    "flags": [
     "zero_views_reported"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7674991271806586133.jpg"
@@ -533,6 +552,7 @@
    "flags": [
     "zero_views_reported"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_DbsHZYmJEs_",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7674976862984080661.jpg"
@@ -559,6 +579,7 @@
    "flags": [
     "zero_views_reported"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_DaRlBaKJboP",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7674907785682750740.jpg"
@@ -585,6 +606,7 @@
    "flags": [
     "zero_views_reported"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": "ig_DbVy0VgpbUb",
    "crossPostedAs": [],
    "thumbnail": "thumbnails/tt_7674830466993753365.jpg"
@@ -596,7 +618,7 @@
    "caption": "“The wrong AI will cost you more.”\n\nSome people think that any AI tool will do, but the wrong ones can cost you time, money and better results. \nSome tools are great for writing, while others are better for research. \nSome are built for automation, coding or business workflow. \nIf you pick the wrong one, you end up paying for features that you do not need, or even worse missing the ones that you do need. \nAt AINCHORS, we help you choose the right AI for the job. \nSo you spend less time guessing, and more time getting results. \nCome to AINCHORS, and we will help you decide which AI to use.\n\n#aitraining #ai #aitools #aicourse",
    "publishedAt": "2026-08-08T08:55:57.000Z",
    "contentType": "reel",
-   "views": 312,
+   "views": 314,
    "altViews": 74,
    "likes": 6,
    "comments": 2,
@@ -610,6 +632,7 @@
     "aicourse"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_Dbxe5S3Jjtc.jpg"
@@ -621,8 +644,8 @@
    "caption": "“One AI skill can make you look 10x more efficient at work.”\n\nImagine replying faster, researching faster, planning faster, and presenting better.\nThat is the power of using AI with the right workflow.\nAINCHORS courses are designed to turn AI into visible workplace results.\nSave this for your career goals.\n\n#aiskills #ai #career #careergrowth",
    "publishedAt": "2026-08-08T08:54:48.000Z",
    "contentType": "reel",
-   "views": 274,
-   "altViews": 34,
+   "views": 276,
+   "altViews": 36,
    "likes": 2,
    "comments": 0,
    "shares": null,
@@ -635,6 +658,7 @@
     "careergrowth"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7675948143787134215"
@@ -648,8 +672,8 @@
    "caption": "“Your team is using AI. But is your team using it well? One bad AI output in the wrong place could cost your company everything.”\n\nGovernance. Accuracy. Hallucinations. Bias. Data privacy.\nThese are the AI risks most companies haven’t trained their teams to handle.\nA well-meaning employee using an AI tool the wrong way can expose your company to regulatory, legal, or reputational consequences.\nAINCHORS delivers corporate AI training that covers not just HOW to use AI — but how to use it RESPONSIBLY.\nWe’ve trained teams at financial institutions, government bodies, and regional enterprises across Asia and the Middle East.\n\n#aiskills #aicourse #business #aitraining",
    "publishedAt": "2026-08-08T08:53:28.000Z",
    "contentType": "reel",
-   "views": 201,
-   "altViews": 34,
+   "views": 203,
+   "altViews": 35,
    "likes": 7,
    "comments": 0,
    "shares": null,
@@ -662,6 +686,7 @@
     "aitraining"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7675652936562822408"
@@ -675,8 +700,8 @@
    "caption": "Ai can help if you choose the right one 🤖🤝🏻\nAi is so smart right now,It can write,summarise,research ,automate and even act like an assistant but not every Ai is built for the same job. Thats why some people get amazing results while others are left disappointed. The difference is the tools. At AInchors,we help you find the right Ai for your workflow,your team and your business. So Ai will actually help you instead of adding more confusion. Come to  Ainchors and let us decide which Ai you should use. \n\n#ai #aiskills #aijourney",
    "publishedAt": "2026-08-06T06:59:03.000Z",
    "contentType": "reel",
-   "views": 187,
-   "altViews": 36,
+   "views": 189,
+   "altViews": 37,
    "likes": 4,
    "comments": 0,
    "shares": null,
@@ -688,6 +713,7 @@
     "aijourney"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7674976862984080661"
@@ -701,8 +727,8 @@
    "caption": "#movitation #success #businesswomen",
    "publishedAt": "2026-07-31T20:33:30.000Z",
    "contentType": "reel",
-   "views": 28517,
-   "altViews": 7221,
+   "views": 28520,
+   "altViews": 7222,
    "likes": 114,
    "comments": 0,
    "shares": null,
@@ -714,6 +740,7 @@
     "businesswomen"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DbeIUn4zOmf.jpg"
@@ -725,8 +752,8 @@
    "caption": "#inspiration #inspirational #aspiretoinspirebeforeiexpire",
    "publishedAt": "2026-07-31T07:10:26.000Z",
    "contentType": "reel",
-   "views": 276,
-   "altViews": 15519,
+   "views": 278,
+   "altViews": 15521,
    "likes": 66,
    "comments": 0,
    "shares": null,
@@ -740,6 +767,7 @@
    "flags": [
     "views_field_conflict"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DbcsbITpyVi.jpg"
@@ -751,9 +779,9 @@
    "caption": "“Your boss is using AI. Your competitor is using AI. Are you still googling things?”\n\nIn 2024, 77% of Fortune 500 companies deployed AI tools.\r\nIn 2026? It’s not an advantage anymore — it’s a minimum requirement.\r\nThe gap between people who know HOW to use AI and people who just know it exists... is now a career gap.\r\nThe good news? It takes less than 2 weeks to close that gap.\r\nWe teach exactly this at AINCHORS — real AI skills, real applications, real results.\n\n#ai #business #aiskills #aicourse",
    "publishedAt": "2026-07-29T10:26:50.000Z",
    "contentType": "reel",
-   "views": 37463,
-   "altViews": 8243,
-   "likes": 1736,
+   "views": 37466,
+   "altViews": 8244,
+   "likes": 1735,
    "comments": 0,
    "shares": null,
    "saves": null,
@@ -765,6 +793,7 @@
     "aicourse"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7675200156626849044"
@@ -792,6 +821,7 @@
     "business"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7674830466993753365"
@@ -819,6 +849,7 @@
     "businessgrowth"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7675197899109584148"
@@ -846,6 +877,7 @@
     "business"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7676055514630884615"
@@ -873,6 +905,7 @@
     "productivity"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7674907785682750740"
@@ -900,6 +933,7 @@
     "joinusnow"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DaAjxsQJlUP.jpg"
@@ -925,6 +959,7 @@
     "aiskills"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DaAhD5ep5VS.jpg"
@@ -949,6 +984,7 @@
     "business"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7675633272847633672"
@@ -976,6 +1012,7 @@
     "aiskills"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7675681670456020232"
@@ -1003,6 +1040,7 @@
     "business"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7675194865793256725"
@@ -1030,6 +1068,7 @@
     "marketingdigital"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZ9ii6jh3m_.jpg"
@@ -1055,6 +1094,7 @@
     "realmoney"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZ7VqjTp7_u.jpg"
@@ -1082,6 +1122,7 @@
    "flags": [
     "views_not_available_for_format"
    ],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZ4An2VCbDJ.jpg"
@@ -1108,6 +1149,7 @@
     "malaysia"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZ3-08vJzLD.jpg"
@@ -1133,6 +1175,7 @@
     "joinusnow"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZ3xd9yJbfi.jpg"
@@ -1158,6 +1201,7 @@
     "betterai"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7675205130404384021"
@@ -1186,6 +1230,7 @@
     "claude"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [
     "tt_7675946301724314898"
@@ -1199,8 +1244,8 @@
    "caption": "Everyone is using AI… but not everyone knows how to talk to it properly.\n\nEvery Tuesday and Thurday we’re running an in‑person ‘AI Prompt Engineering 101’ class at Wisma Mont Kiara. You’ll get real‑world examples, hands‑on practice, and live Q&A so you can use AI to get better ideas and work faster—like a pro, not a beginner.\n\nSeats are limited, please DM us and message us “course” and sign up now before the seats are gone.” #ai #aicourse #aiskill #onlinecourse",
    "publishedAt": "2026-06-17T10:32:32.000Z",
    "contentType": "reel",
-   "views": 664,
-   "altViews": 266,
+   "views": 666,
+   "altViews": 267,
    "likes": 28,
    "comments": 11,
    "shares": null,
@@ -1213,6 +1258,7 @@
     "onlinecourse"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZrwCzEpUB3.jpg"
@@ -1238,6 +1284,7 @@
     "job"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZrsr2mJ66y.jpg"
@@ -1249,7 +1296,7 @@
    "caption": "AI isn’t coming. Is already here #ai #aiawareness",
    "publishedAt": "2026-06-17T08:38:16.000Z",
    "contentType": "reel",
-   "views": 13954,
+   "views": 13955,
    "altViews": 2531,
    "likes": 107,
    "comments": 4,
@@ -1261,6 +1308,7 @@
     "aiawareness"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZrioHUpxkY.jpg"
@@ -1287,6 +1335,7 @@
     "artificialintelligence"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZmUliEJKPM.jpg"
@@ -1312,6 +1361,7 @@
     "inclusiveeducation"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZeimNMJEHk.jpg"
@@ -1338,6 +1388,7 @@
     "techeducation"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DZefnoTpw3j.jpg"
@@ -1360,6 +1411,7 @@
     "Riyadhtosydney"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DSVCa0ViM8W.jpg"
@@ -1386,6 +1438,7 @@
     "CorporateCulture"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DSMpmBKCAMS.jpg"
@@ -1412,6 +1465,7 @@
     "CorporateCulture"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DSMlUrlCFJm.jpg"
@@ -1438,6 +1492,7 @@
     "RiyadhCity"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DSKpHgdCMAK.jpg"
@@ -1464,6 +1519,7 @@
     "abudhabicity"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DP9Qzabks_Q.jpg"
@@ -1492,6 +1548,7 @@
     "aifuture"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DP4_rbskpSK.jpg"
@@ -1512,6 +1569,7 @@
    "durationSec": 9.15,
    "hashtags": [],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPhNSjzE47a.jpg"
@@ -1539,6 +1597,7 @@
     "offerlab"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPhMXn9Ez8i.jpg"
@@ -1566,6 +1625,7 @@
     "offerlab"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPhL3n7kwXO.jpg"
@@ -1592,6 +1652,7 @@
     "affilatemarketing"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPhKqwrE7N4.jpg"
@@ -1619,6 +1680,7 @@
     "offerlab"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPeAbmdiarq.jpg"
@@ -1646,6 +1708,7 @@
     "offerlab"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPd8vD3CQ4y.jpg"
@@ -1671,6 +1734,7 @@
     "aspiretoinspirebeforeiexpire"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPdJY-IEnhB.jpg"
@@ -1697,6 +1761,7 @@
     "affilatemarketing"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPZA67WDTZI.jpg"
@@ -1723,6 +1788,7 @@
     "affilatemarketing"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPY1_t7DGNs.jpg"
@@ -1743,6 +1809,7 @@
    "durationSec": 17.11,
    "hashtags": [],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPIpgoQDkN7.jpg"
@@ -1771,6 +1838,7 @@
     "freedomofchoice"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPHxJ9WE2XU.jpg"
@@ -1799,6 +1867,7 @@
     "offerlab"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPEZoo6EumB.jpg"
@@ -1826,6 +1895,7 @@
     "offerlab"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPCN5eAEsi5.jpg"
@@ -1853,6 +1923,7 @@
     "offerlab"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPBsShdEmYl.jpg"
@@ -1878,6 +1949,7 @@
     "affilatemarketing"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPA7JPRErbj.jpg"
@@ -1903,6 +1975,7 @@
     "affilatemarketing"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DPA7BmVko9K.jpg"
@@ -1926,6 +1999,7 @@
     "freedomofchoice"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DO5qRudEvjG.jpg"
@@ -1952,6 +2026,7 @@
     "digitalmarketer"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DOx3eTSjxbZ.jpg"
@@ -1972,6 +2047,7 @@
    "durationSec": 83.08,
    "hashtags": [],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DOdf-UAEl98.jpg"
@@ -1992,6 +2068,7 @@
    "durationSec": 44.95,
    "hashtags": [],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DOde6i5kslH.jpg"
@@ -2012,6 +2089,7 @@
    "durationSec": 20.99,
    "hashtags": [],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DObNQmAkieu.jpg"
@@ -2040,6 +2118,7 @@
     "affilatemarketing"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DONtiJYADfs.jpg"
@@ -2067,6 +2146,7 @@
     "affilatemarketing"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DOKzuayANr1.jpg"
@@ -2098,6 +2178,7 @@
     "aspiretoinspirebeforeiexpire"
    ],
    "flags": [],
+   "metricsAsOf": "2026-09-29T05:45:23+00:00",
    "crossPostOf": null,
    "crossPostedAs": [],
    "thumbnail": "thumbnails/ig_DOF5wCvgMHS.jpg"

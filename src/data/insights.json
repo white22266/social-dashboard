@@ -1,23 +1,24 @@
 {
- "basedOnCollectedAt": "2026-09-28",
+ "basedOnCollectedAt": "2026-09-29",
  "generatedBy": "Ollama · kimi-k3:cloud (thinking)",
  "headline": {
-  "title": "Instagram is working and improving; TikTok has not started.",
+  "title": "Instagram is working and improving; TikTok has still not started.",
   "platformIntro": "Instagram produces the reach, the breakouts and nearly all the engagement, and its 2026 AI-skills content is clearly stronger than the 2025 posts. TikTok has not started distributing. The 13 shared scripts show the gap most clearly.",
   "platformTitle": "Two channels at different stages"
  },
  "executiveSummary": [
-  "Instagram is the only channel producing reach today: it accounts for 99% of all views (164,836 of 165,774), while the median TikTok video has 1 view and 8 of 20 TikTok videos report 0 views.",
-  "Instagram reach is concentrated: 4 reels delivered 71% of Instagram views, and one reel (\"Your boss is using AI…\") holds 70% of all Instagram likes.",
+  "Instagram is the only channel producing reach today: it accounts for 99% of all views (164,855 of 165,793), while the median TikTok video has 1 view and 8 of 20 TikTok videos report 0 views.",
+  "Instagram reach is concentrated: 4 reels delivered 71% of Instagram views, and one reel (“Your boss is using AI…”) holds 69% of all Instagram likes.",
   "The 2026 AI-skills period outperforms the 2025 lifestyle and mindset period on every typical measure: median views 366 vs 210, median engagement per 1,000 views 26.9 vs 6.1, median likes 9 vs 2 (30 posts in each year).",
   "The same 13 scripts reached a median of 409 views on Instagram and 1 view on TikTok, so the TikTok gap is not explained by the content itself.",
-  "Cadence is still the weak point: Instagram has posted in only 17 weeks across a 388-day span (including a 178-day silence), TikTok has been silent for 39 days after a 3-day burst, and the latest Instagram post is a festival image with 1 like."
+  "Cadence is still the weak point: Instagram has posted in only 17 weeks across a 388-day span (including a 178-day silence), TikTok has been silent for 40 days after a 3-day burst, and the latest Instagram post is a festival image with 2 likes.",
+  "No posts have been published since the previous report, so the five recommended test posts remain untested and their pass marks still stand."
  ],
  "platformNarrative": {
   "instagram": [
    {
     "kind": "observation",
-    "text": "This is a reach-and-occasional-breakout channel. A typical post gets 300 views, but 12 of the 58 posts with views passed 1,000 and 4 reached 13,954 or more. Those spikes carry the account: the top 4 reels hold 71% of Instagram views."
+    "text": "This is a reach-and-occasional-breakout channel. A typical post gets 300 views, but 12 of the 58 posts with views passed 1,000 and 4 reached 13,955 or more. Those spikes carry the account: the top 4 reels hold 71% of Instagram views."
    },
    {
     "kind": "observation",
@@ -25,17 +26,21 @@
    },
    {
     "kind": "observation",
-    "text": "The account has improved since the pivot to AI-skills content: the 2026 median is 366 views and 26.9 engagements per 1,000, against 210 and 6.1 in 2025. Because the topic change and the calendar change coincide, part of the lift may reflect account growth over time rather than content alone."
+    "text": "The account has improved since the pivot to AI-skills content: the 2026 median is 366 views and 26.9 engagements per 1,000, against 210 and 6.1 in 2025 (30 posts in each year)."
+   },
+   {
+    "kind": "hypothesis",
+    "text": "Because the AI-topic pivot and the calendar change coincide, part of the 2026 lift may reflect account growth over time rather than content alone. This dataset cannot separate the two."
    },
    {
     "kind": "observation",
-    "text": "Posting is bursty: 60 posts across 17 active weeks in a 388-day span, with a 178-day silence between December 2025 and June 2026. The most recent post (3 days before this report) is a Mid-Autumn Festival image with 1 like and no public view count."
+    "text": "Posting is bursty: 60 posts across 17 active weeks in a 388-day span, with a 178-day silence between December 2025 and June 2026. The most recent post (4 days before this report) is a Mid-Autumn Festival image with 2 likes and no public view count."
    }
   ],
   "tiktok": [
    {
     "kind": "observation",
-    "text": "This channel has not started distributing. All 20 videos went out within 3 days (17–20 Aug 2026) to an account with 2 followers, 8 videos report 0 views, and nothing has been posted in the 39 days since."
+    "text": "This channel has not started distributing. All 20 videos went out within 3 days (17–20 Aug 2026) to an account with 2 followers, 8 videos report 0 views, and nothing has been posted in the 40 days since."
    },
    {
     "kind": "observation",
@@ -43,7 +48,7 @@
    },
    {
     "kind": "hypothesis",
-    "text": "Twenty uploads in 3 days from a brand-new account, with 13 captions reused from Instagram, may have limited early distribution. Public data cannot confirm how TikTok treated these uploads. Check TikTok Studio for any restriction or \"ineligible for For You\" notices."
+    "text": "Twenty uploads in 3 days from a brand-new account, with 13 captions reused from Instagram, may have limited early distribution. Public data cannot confirm how TikTok treated these uploads. Check TikTok Studio for any restriction or “ineligible for For You” notices."
    }
   ],
   "differences": [
@@ -53,7 +58,7 @@
    },
    {
     "kind": "observation",
-    "text": "Where TikTok did get views, the strongest videos were an AI tool-choice script (223 views, 9 likes, 2 saves), a \"stop using AI like a search engine\" how-to (219 views, 6 likes, 1 save) and an ROI story about investing $80 in skills (208 views, 5 likes). These are the same themes that engage best on Instagram."
+    "text": "Where TikTok did get views, the strongest videos were an AI tool-choice script (223 views, 9 likes, 2 saves), a “stop using AI like a search engine” how-to (219 views, 6 likes, 1 save) and an ROI story about investing $80 in skills (208 views, 5 likes). These are the same themes that engage best on Instagram."
    },
    {
     "kind": "observation",
@@ -61,7 +66,7 @@
    },
    {
     "kind": "hypothesis",
-    "text": "The platforms are at different stages rather than one being \"better\". Instagram has 2,254 followers and an algorithm history; TikTok has neither yet."
+    "text": "The platforms are at different stages rather than one being “better”. Instagram has 2,253 followers and an algorithm history; TikTok has neither yet."
    }
   ]
  },
@@ -69,15 +74,15 @@
   "ig_DbX5MjSpBJq": [
    {
     "kind": "observation",
-    "text": "Highest views (37,463) and by far the highest engagement: 1,736 likes, 0 comments, 46.3 per 1,000 views — 3.5× the Instagram median rate. It holds 70% of all Instagram likes."
+    "text": "Highest views (37,466) and by far the highest engagement: 1,735 likes, 0 comments, 46.3 per 1,000 views — 3.5× the Instagram median rate. It holds 69% of all Instagram likes."
    },
    {
     "kind": "observation",
-    "text": "It combines a second-person question hook, a statistic (\"77% of Fortune 500…\") and a career-gap stakes line."
+    "text": "It combines a second-person question hook, a statistic (“77% of Fortune 500…”) and a career-gap stakes line."
    },
    {
     "kind": "hypothesis",
-    "text": "The like count is so far above every other post (the next best has 114) that an external push, such as a boost, a share by a large account or a feature, is plausible. Public data cannot confirm whether it was boosted, so check Instagram Insights → \"Reach from ads\"."
+    "text": "The like count is so far above every other post (the next best has 114) that an external push, such as a boost, a share by a large account or a feature, is plausible. Public data cannot confirm whether it was boosted, so check Instagram Insights → “Reach from ads”."
    }
   ],
   "ig_DaRlBaKJboP": [
@@ -87,13 +92,13 @@
    },
    {
     "kind": "hypothesis",
-    "text": "The \"Imagine an AI that…\" hook earns the watch, but the caption gives no reason to respond: no question, poll or save prompt. That fits the wider curiosity-hook pattern of high reach and low response."
+    "text": "The “Imagine an AI that…” hook earns the watch, but the caption gives no reason to respond: no question, poll or save prompt. That fits the wider curiosity-hook pattern of high reach and low response."
    }
   ],
   "ig_DbeIUn4zOmf": [
    {
     "kind": "observation",
-    "text": "The caption is only hashtags (\"#movitation #success #businesswomen\"), yet the post reached 28,517 views — 140.5× the median of other mindset posts — with 114 likes (4 per 1,000)."
+    "text": "The caption is only hashtags (“#movitation #success #businesswomen”), yet the post reached 28,520 views — 140.5× the median of other mindset posts — with 114 likes (4 per 1,000)."
    },
    {
     "kind": "hypothesis",
@@ -103,7 +108,7 @@
   "ig_DZrioHUpxkY": [
    {
     "kind": "observation",
-    "text": "A 64-second reel with a 7-word caption (\"AI isn't coming. Is already here\") reached 13,954 views and 111 engagements — 22.5× the median for its topic."
+    "text": "A 64-second reel with a 7-word caption (“AI isn't coming. Is already here”) reached 13,955 views and 111 engagements — 22.5× the median for its topic."
    },
    {
     "kind": "hypothesis",
@@ -123,13 +128,13 @@
   "ig_DahbtfnJsdT": [
    {
     "kind": "observation",
-    "text": "Problem-plus-fix format (\"The one AI mistake costing you hours… and the 30-second fix\") reached 6,179 views and earned 64 engagements (62 likes, 2 comments), or 10.4 per 1,000."
+    "text": "Problem-plus-fix format (“The one AI mistake costing you hours… and the 30-second fix”) reached 6,179 views and earned 64 engagements (62 likes, 2 comments), or 10.4 per 1,000."
    }
   ],
   "ig_DZrwCzEpUB3": [
    {
     "kind": "observation",
-    "text": "Best engagement rate among above-median posts: 58.7 per 1,000 views (4.4× the platform median rate), with 11 comments — the most comments on any post in the dataset — on 664 views."
+    "text": "Best engagement rate among above-median posts: 58.6 per 1,000 views (4.4× the platform median rate), with 11 comments — the most comments on any post in the dataset — on 666 views."
    },
    {
     "kind": "hypothesis",
@@ -145,7 +150,7 @@
   "ig_DbcsbITpyVi": [
    {
     "kind": "observation",
-    "text": "Instagram reports 276 plays but 15,519 legacy \"video views\" for this reel, alongside 66 likes. The two view fields normally move together, so treat its 239.1 per-1,000 rate with caution."
+    "text": "Instagram reports 278 plays but 15,521 legacy “video views” for this reel, alongside 66 likes. The two view fields normally move together, so treat its 237.4 per-1,000 rate with caution."
    }
   ],
   "ig_DPhKqwrE7N4": [
@@ -167,7 +172,7 @@
   "tt_7675200156626849044": [
    {
     "kind": "observation",
-    "text": "Same script as the top Instagram reel (37,463 views there), but 1 view on TikTok."
+    "text": "Same script as the top Instagram reel (37,466 views there), but 1 view on TikTok."
    },
    {
     "kind": "hypothesis",
@@ -183,20 +188,20 @@
   "tt_7676052264208928018": [
    {
     "kind": "observation",
-    "text": "A TikTok-only how-to (\"Stop using AI like a search engine\") reached 219 views, 6 likes and 1 save (27.4 per 1,000)."
+    "text": "A TikTok-only how-to (“Stop using AI like a search engine”) reached 219 views, 6 likes and 1 save (27.4 per 1,000)."
    }
   ]
  },
  "topicNotes": {
   "ai-how-to": "Highest median reach on Instagram (6,492 views) but the lowest engagement rate (2.2 per 1,000) — and only 4 Instagram posts, so the sample is small. This content attracts viewers but does not get them to respond.",
-  "ai-future-of-work": "Holds the #1 post (37,463 views). A typical Instagram post gets 621 views and 27.3 engagements per 1,000 (5 posts). On TikTok, all 5 posts had 5 views or fewer.",
+  "ai-future-of-work": "Holds the #1 post (37,466 views). A typical Instagram post gets 621 views and 27.3 engagements per 1,000 (5 posts). On TikTok, all 5 posts had 5 views or fewer.",
   "ai-tool-choice": "The most consistent performer: 387 median views and 30.9 engagements per 1,000 on Instagram (5 posts), and it produced the best TikTok video (223 views, 2 saves).",
   "course-promo": "The most-used topic (19 posts across both platforms). It engages well per view (29.4 per 1,000 on Instagram) but a typical post is capped at 297 views.",
   "corporate-escape": "The 2025 topic with the most reach: 2,256 median views over 5 posts, but a low engagement rate (5.5 per 1,000). It has not been used since the AI pivot.",
   "work-life-balance": "Median 203 views over 8 posts; one question-led outlier reached 5,941 views with only 6 engagements.",
-  "mindset": "The largest 2025 topic (13 posts) and the weakest typical result: 203 median views, 4.9 per 1,000. The exception is a hashtag-only reel at 28,517 views.",
+  "mindset": "The largest 2025 topic (13 posts) and the weakest typical result: 203 median views, 4.9 per 1,000. The exception is a hashtag-only reel at 28,520 views.",
   "travel-bts": "Steady but modest: 319 median views, 7.4 per 1,000 (6 posts). Two Riyadh captions read like production notes rather than audience-facing copy.",
-  "personal-seasonal": "Only 2 posts — a family carousel and the Mid-Autumn Festival image that is the account's latest post. Neither has a public view count, so they cannot be ranked on reach; the festival image earned 1 like."
+  "personal-seasonal": "Only 2 posts — a family carousel and the Mid-Autumn Festival image that is the account's latest post. Neither has a public view count, so they cannot be ranked on reach; the festival image earned 2 likes."
  },
  "quadrantNotes": {
   "reach-engage": {
@@ -212,7 +217,7 @@
    "action": "Do not expect reach from promotion. Pair each promotional post with a reach post (a question or curiosity hook on AI and careers), and re-post the strongest promotional post with an outcome-led first line."
   },
   "neither": {
-   "interpretation": "20 posts, 17 of them from 2025 — mostly the September–October 2025 mindset and work-life-balance reels. Many were posted 3–5 on the same day, and several share near-identical scripts.",
+   "interpretation": "20 posts, 17 of them from 2025 — mostly the September–October 2025 mindset and work-life-balance reels. Many were posted in same-day batches, and several share near-identical scripts.",
    "action": "Retire short aphorism reels as a stand-alone format, and never stack posts minutes apart."
   }
  },
@@ -235,7 +240,7 @@
    "lines": [
     {
      "kind": "observation",
-     "text": "Evening posts (17:00–21:00 Kuala Lumpur time) have the highest median reach on Instagram: 402 views vs 297 in the afternoon and 212 at night. Evening also leads in both the 2025 and 2026 periods, so the result is not only a side-effect of topic. Morning is low-sample (3 posts)."
+     "text": "Evening posts (Kuala Lumpur time) have the highest median reach on Instagram: 402 views vs 297 in the afternoon and 212 at night. Evening also leads among the well-sampled time slots in both the 2025 and 2026 periods, so the result is not only a side-effect of topic. Morning is low-sample (3 posts)."
     },
     {
      "kind": "observation",
@@ -248,11 +253,11 @@
    "lines": [
     {
      "kind": "observation",
-     "text": "On Instagram, 40–59s reels have the best balance: 373 median views and the highest engagement rate (25.9 per 1,000, 16 posts). Under-20s reels are weakest (206 views, 8.9 per 1,000, 14 posts); most under-20s reels are 2025 quote reels, so topic and length overlap."
+     "text": "On Instagram, 40–59s reels have the best balance: 373 median views and the highest engagement rate (25.8 per 1,000, 16 posts). Under-20s reels are weakest (206 views, 8.9 per 1,000, 14 posts); most under-20s reels are 2025 quote reels, so topic and length overlap."
     },
     {
      "kind": "observation",
-     "text": "In 2026, 3 of the 5 reels over 60 seconds reached 13,954 views or more, but at a lower engagement rate (8 per 1,000). That is a promising but small sample."
+     "text": "In 2026, 3 of the 5 reels over 60 seconds reached 13,955 views or more, but at a lower engagement rate (8 per 1,000). That is a promising but small sample."
     }
    ]
   },
@@ -270,11 +275,11 @@
    "lines": [
     {
      "kind": "observation",
-     "text": "Instagram posts published within 3 hours of another post have a median of 274 views and 10.4 per 1,000 (31 posts), vs 318 and 13.8 for stand-alone posts (27). The gap is small and the direction is consistent, but it is not conclusive."
+     "text": "Instagram posts published within 3 hours of another post have a median of 276 views and 10.4 per 1,000 (31 posts), vs 318 and 13.8 for stand-alone posts (27). The gap is small and the direction is consistent, but it is not conclusive."
     },
     {
      "kind": "observation",
-     "text": "Several days had 3–4 posts, often within minutes — for example 3 reels within minutes of each other on 8 Aug 2026, and two reels with the same caption about a minute apart on 25 Sep 2025."
+     "text": "Several days had multiple posts within minutes — for example 3 reels within minutes of each other on 8 Aug 2026, and two reels with the same caption about a minute apart on 25 Sep 2025."
     }
    ]
   }
@@ -282,11 +287,11 @@
  "hookNotes": [
   {
    "kind": "observation",
-   "text": "On Instagram, hooks sort into reach hooks and response hooks. Curiosity (median 3,603 views, 4 posts — low sample) and question openers (2,256, 7 posts) reach furthest but earn little (3.6 and 1.8 per 1,000). Problem (29.2 per 1,000, 267 median views) and benefit openers (21.4, 345) earn the most per view but reach only a few hundred views."
+   "text": "On Instagram, hooks sort into reach hooks and response hooks. Curiosity (median 3,603 views, 4 posts — low sample) and question openers (2,256, 7 posts) reach furthest but earn little (3.6 and 1.8 per 1,000). Problem (29.2 per 1,000, 267 median views) and benefit openers (21.2, 345) earn the most per view but reach only a few hundred views."
   },
   {
    "kind": "observation",
-   "text": "Question hooks are boom-or-bust: the group contains the best post in the dataset (37,463 views, 46.3 per 1,000) and several posts with 0 engagement, which is why its pooled rate (36.2) and its median rate (1.8) disagree."
+   "text": "Question hooks are boom-or-bust: the group contains the best post in the dataset (37,466 views, 46.3 per 1,000) and several posts with 0 engagement, which is why its pooled rate (36.2) and its median rate (1.8) disagree."
   },
   {
    "kind": "observation",
@@ -294,7 +299,7 @@
   },
   {
    "kind": "hypothesis",
-   "text": "Pairing a reach hook with a response ending — a question or curiosity opener followed by a \"comment your answer\" prompt — may capture both. The top post already does something similar: a question plus a statistic plus stakes."
+   "text": "Pairing a reach hook with a response ending — a question or curiosity opener followed by a “comment your answer” prompt — may capture both. The top post already does something similar: a question plus a statistic plus stakes."
   },
   {
    "kind": "observation",
@@ -306,7 +311,7 @@
    {
     "kind": "observation",
     "title": "AI career-stakes posts built like the top reel",
-    "detail": "\"Your boss is using AI…\" combined a question hook, a statistic and a career-gap stakes line, and reached 37,463 views with 46.3 engagements per 1,000. The future-of-work topic holds the #1 post and a typical post earns 621 views and 27.3 engagements per 1,000 on Instagram (5 posts)."
+    "detail": "“Your boss is using AI…” combined a question hook, a statistic and a career-gap stakes line, and reached 37,466 views with 46.3 engagements per 1,000. The future-of-work topic holds the #1 post and a typical post earns 621 views and 27.3 engagements per 1,000 on Instagram (5 posts)."
    },
    {
     "kind": "observation",
@@ -316,7 +321,7 @@
    {
     "kind": "observation",
     "title": "Concrete, local class offers",
-    "detail": "The post promoting a specific in-person class earned 39 engagements on 664 views (58.7 per 1,000) and 11 comments, the most of any post in the dataset. A typical course-promotion post gets 297 views (12 posts), so the concrete offer also travelled further than usual."
+    "detail": "The post promoting a specific in-person class earned 39 engagements on 666 views (58.6 per 1,000) and 11 comments, the most of any post in the dataset. A typical course-promotion post gets 297 views (12 posts), so the concrete offer also travelled further than usual."
    }
   ],
   "less": [
@@ -328,7 +333,7 @@
    {
     "kind": "observation",
     "title": "Stacking posts minutes apart",
-    "detail": "Posts published within 3 hours of another post median 274 views and 10.4 engagements per 1,000 (31 posts), against 318 and 13.8 for stand-alone posts (27). Several days had 3–4 posts within minutes, including 3 reels within minutes of each other on 8 Aug 2026."
+    "detail": "Posts published within 3 hours of another post median 276 views and 10.4 engagements per 1,000 (31 posts), against 318 and 13.8 for stand-alone posts (27). Several days had multiple posts within minutes, including 3 reels within minutes of each other on 8 Aug 2026."
    },
    {
     "kind": "observation",
@@ -338,7 +343,7 @@
    {
     "kind": "observation",
     "title": "Captions that are production notes",
-    "detail": "Two Riyadh posts carry internal copy (\"Vivid language that mirrors your stunning night visuals…\"). Neither earned more than 2 engagements. Audit captions before publishing."
+    "detail": "Two Riyadh posts carry internal copy (“Vivid language that mirrors your stunning night visuals…”). Neither earned more than 2 engagements. Audit captions before publishing."
    }
   ],
   "experiment": [
@@ -350,24 +355,24 @@
    {
     "kind": "observation",
     "title": "Longer AI explainers (over 60 seconds)",
-    "detail": "In 2026, 3 of the 5 reels over 60 seconds reached 13,954 views or more, though at a lower engagement rate (8 per 1,000). Five posts is a promising but small sample, so treat this as 2–3 more tests rather than a new default."
+    "detail": "In 2026, 3 of the 5 reels over 60 seconds reached 13,955 views or more, though at a lower engagement rate (8 per 1,000). Five posts is a promising but small sample, so treat this as 2–3 more tests rather than a new default."
    },
    {
     "kind": "hypothesis",
     "title": "Converting curiosity reach into response",
-    "detail": "The quiz reel (6,805 views, 6 likes, 0 comments) and \"Imagine an AI…\" (37,449 views, 84 engagements) had the reach but not the response. Test the same hooks with the answer held back and a \"comment your answer\" ending."
+    "detail": "The quiz reel (6,805 views, 6 likes, 0 comments) and “Imagine an AI…” (37,449 views, 84 engagements) had the reach but not the response. Test the same hooks with the answer held back and a “comment your answer” ending."
    }
   ],
   "hooks": [
    {
     "kind": "observation",
     "title": "For reach: question or curiosity opener",
-    "detail": "Question hooks median 2,256 views (7 posts) and curiosity hooks 3,603 (4 posts, low sample), but both earn little per view (1.8 and 3.6 per 1,000). Question hooks are boom-or-bust: the group holds the best post in the dataset (37,463 views, 46.3 per 1,000) and several posts with 0 engagement."
+    "detail": "Question hooks median 2,256 views (7 posts) and curiosity hooks 3,603 (4 posts, low sample), but both earn little per view (1.8 and 3.6 per 1,000). Question hooks are boom-or-bust: the group holds the best post in the dataset (37,466 views, 46.3 per 1,000) and several posts with 0 engagement."
    },
    {
     "kind": "observation",
     "title": "For response: problem or benefit opener",
-    "detail": "Problem and benefit openers earn the most per view on Instagram (29.2 and 21.4 per 1,000) but reach only a few hundred views (267 and 345 medians)."
+    "detail": "Problem and benefit openers earn the most per view on Instagram (29.2 and 21.2 per 1,000) but reach only a few hundred views (267 and 345 medians)."
    },
    {
     "kind": "hypothesis",
@@ -378,18 +383,18 @@
   "duration": {
    "kind": "observation",
    "title": "40–59 seconds as the default; test over-60s for explainers",
-   "detail": "The 40–59s group has the best balance on Instagram: 373 median views and the highest engagement rate, 25.9 per 1,000 (16 posts). Under-20s reels are weakest (206 views, 8.9 per 1,000, 14 posts), though most of those are 2025 quote reels, so topic and length overlap. In 2026, 3 of the 5 reels over 60 seconds reached 13,954 views or more."
+   "detail": "The 40–59s group has the best balance on Instagram: 373 median views and the highest engagement rate, 25.8 per 1,000 (16 posts). Under-20s reels are weakest (206 views, 8.9 per 1,000, 14 posts), though most of those are 2025 quote reels, so topic and length overlap. In 2026, 3 of the 5 reels over 60 seconds reached 13,955 views or more, at a lower engagement rate (8 per 1,000) — a promising but small sample."
   },
   "posting": [
    {
     "kind": "observation",
     "title": "Post in the evening (17:00–21:00 KL time)",
-    "detail": "Evening posts have the highest median Instagram reach: 402 views (15 posts) vs 297 in the afternoon (25 posts) and 212 at night (17 posts). Evening also leads within both the 2025 and 2026 periods, so the result is not only a side-effect of topic. Morning is low-sample (3 posts)."
+    "detail": "Evening posts have the highest median Instagram reach: 402 views (15 posts) vs 297 in the afternoon (25 posts) and 212 at night (17 posts). Evening also leads among the well-sampled time slots in both the 2025 and 2026 periods, so the result is not only a side-effect of topic. Morning is low-sample (3 posts)."
    },
    {
     "kind": "observation",
     "title": "Space posts out and keep a steady rhythm",
-    "detail": "Instagram has posted in only 17 weeks across a 388-day span, including a 178-day silence between December 2025 and June 2026. One post per slot, no same-hour stacking."
+    "detail": "Instagram has posted in only 17 weeks across a 388-day span, including a 178-day silence between December 2025 and June 2026. One post per slot, no same-hour stacking: posts within 3 hours of another median 276 views, against 318 for stand-alone posts."
    },
    {
     "kind": "general",
@@ -402,24 +407,24 @@
     {
      "kind": "observation",
      "title": "Role: reach and lead generation",
-     "detail": "Instagram holds the audience (2,254 followers) and 99% of all views. Optimise for the reach-plus-engagement group: re-cut the winning structures with new examples and add response endings to curiosity hooks."
+     "detail": "Instagram holds the audience (2,253 followers) and 99% of all views. Optimise for the reach-plus-engagement group: re-cut the winning structures with new examples and add response endings to curiosity hooks."
     },
     {
      "kind": "observation",
      "title": "Measure the right thing",
-     "detail": "Shares and saves are not public, so export them from Instagram Insights to complete the engagement picture, and check \"Reach from ads\" on the 37,463-view reel to see whether its 1,736 likes had paid support."
+     "detail": "Shares and saves are not public, so export them from Instagram Insights to complete the engagement picture, and check “Reach from ads” on the 37,466-view reel to see whether its 1,735 likes had paid support."
     }
    ],
    "tiktok": [
     {
      "kind": "observation",
      "title": "Role: not yet established, so treat it as a restart",
-     "detail": "20 videos went out in 3 days to a 2-follower account, followed by 39 days of silence. The only traction came on the final day, when 4 of 5 videos reached 148–223 views and earned all 23 likes the account has received."
+     "detail": "20 videos went out in 3 days to a 2-follower account, followed by 40 days of silence. The only traction came on the final day, when 4 of 5 videos reached 148–223 views and earned all 23 likes the account has received."
     },
     {
      "kind": "hypothesis",
      "title": "Post natively and on a steady rhythm",
-     "detail": "One video a day for about 3 weeks, filmed or edited in TikTok, starting with the themes that already worked there: tool choice (223 views), the $80 ROI story (208) and \"stop using AI like a search engine\" (219)."
+     "detail": "One video a day for about 3 weeks, filmed or edited in TikTok, starting with the themes that already worked there: tool choice (223 views), “stop using AI like a search engine” (219) and the $80 ROI story (208)."
     },
     {
      "kind": "general",
@@ -435,7 +440,7 @@
     "topic": "AI & the future of work",
     "hook": "Question + statistic",
     "format": "40–59s reel, evening KL",
-    "brief": "Reuse the top-post structure: open with a second-person question (\"Your team lead just automated half their week — are you still doing it manually?\"), add one statistic, the career-gap stakes, and one concrete skill.",
+    "brief": "Carried over from the previous report — no posts have been published since, so all five tests remain open. Reuse the top-post structure: open with a second-person question (“Your team lead just automated half their week — are you still doing it manually?”), add one statistic, the career-gap stakes, and one concrete skill.",
     "measure": "Beat 300 views (the Instagram median) and 13.3 engagements per 1,000 views (the Instagram median rate)."
    },
    {
@@ -444,7 +449,7 @@
     "topic": "Choosing the right AI tool",
     "hook": "Bold claim",
     "format": "40–59s reel, save-worthy list",
-    "brief": "\"ChatGPT is the wrong tool for 3 of these 5 jobs.\" Show a side-by-side for each job and end with \"save this for your next project\".",
+    "brief": "“ChatGPT is the wrong tool for 3 of these 5 jobs.” Show a side-by-side for each job and end with “save this for your next project”.",
     "measure": "Views above 387 and engagement per 1,000 views above 30.9 (the topic medians)."
    },
    {
@@ -453,7 +458,7 @@
     "topic": "AI how-to & explainers",
     "hook": "Curiosity + answer-in-comments",
     "format": "40–59s quiz reel",
-    "brief": "Rerun the AI vs AI agent vs agentic AI quiz, but hold the answer: \"Comment A, B or C before the reveal.\"",
+    "brief": "Rerun the AI vs AI agent vs agentic AI quiz, but hold the answer: “Comment A, B or C before the reveal.”",
     "measure": "More than 11 comments would make it the most-commented post on the account; the original earned 0 comments on 6,805 views."
    },
    {
@@ -462,7 +467,7 @@
     "topic": "Corporate exit & job security",
     "hook": "News / problem",
     "format": "45–60s talking-head",
-    "brief": "Bring back the 2025 layoff angle with an AI-skills twist: \"Banks cut 3,500 jobs by email. Here is the skill that makes you the person they keep.\"",
+    "brief": "Bring back the 2025 layoff angle with an AI-skills twist: “Banks cut 3,500 jobs by email. Here is the skill that makes you the person they keep.”",
     "measure": "Instagram views above 2,256 (the 2025 layoff-topic median); on TikTok, above 223 views (the best TikTok video so far)."
    },
    {
@@ -471,7 +476,7 @@
     "topic": "Choosing the right AI tool",
     "hook": "Bold claim",
     "format": "Native TikTok upload, about 45s",
-    "brief": "A new, natively filmed version of the best TikTok video (\"Not all AI is built equal\"), posted alone on a quiet day, then one video a day for a week.",
+    "brief": "A new, natively filmed version of the best TikTok video (“Not all AI is built equal”), posted alone on a quiet day, then one video a day for a week.",
     "measure": "Median TikTok views for the week above 100; the account median today is 1."
    }
   ]
