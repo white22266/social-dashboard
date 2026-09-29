@@ -20,6 +20,8 @@ export interface Post {
   flags: string[]
   crossPostOf: string | null
   crossPostedAs: string[]
+  /** when this post's metrics were last scraped (older posts are refreshed monthly) */
+  metricsAsOf?: string | null
 }
 
 export interface AccountMeta {
@@ -35,6 +37,7 @@ export interface DatasetMeta {
   collectedAt: string
   analysisTimezone: string
   duplicatesRemoved: number
+  postsCarriedOver?: number
   accounts: Record<Platform, AccountMeta>
   fieldNotes: Record<string, string>
 }

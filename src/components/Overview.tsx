@@ -102,6 +102,11 @@ export default function Overview({ a, data }: { a: Analysis; data: Dataset }) {
             <li>Instagram share counts are not public, so they are left empty (null) rather than 0. Instagram engagement = likes + comments.</li>
             <li>Instagram views exist for Reels only. The 1 image and 1 carousel post have no view count.</li>
             <li>{a.byPlatform.tiktok?.zeroViewPosts ?? 0} TikTok videos report exactly 0 views. These are reported values, kept as 0.</li>
+            {(data.meta.postsCarriedOver ?? 0) > 0 && (
+              <li>
+                {data.meta.postsCarriedOver} posts were not returned by the latest scrape (deleted, archived or beyond the scrape limit). They keep their last known metrics.
+              </li>
+            )}
             {data.meta.accounts.instagram.postsOnProfile !== null && data.meta.accounts.instagram.postsOnProfile > data.meta.accounts.instagram.postsCollected && (
               <li>
                 {data.meta.accounts.instagram.postsOnProfile - data.meta.accounts.instagram.postsCollected} Instagram posts listed on the profile were not returned by either scraper, most likely archived or restricted posts.

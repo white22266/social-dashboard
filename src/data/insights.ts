@@ -12,6 +12,13 @@ export const BASED_ON_COLLECTED_AT = '2026-09-28'
 type Kind = 'observation' | 'hypothesis' | 'general'
 export interface Line { kind: Kind; text: string }
 
+/** Page headline and the one-line intro under the Instagram vs TikTok section. */
+export const headline = {
+  title: "Instagram is working. TikTok hasn't started yet.",
+  platformIntro: 'Instagram is producing reach with the occasional breakout. TikTok has not started distributing yet. The same scripts show the gap most clearly.',
+  platformTitle: 'Two channels at different stages',
+}
+
 export const executiveSummary: string[] = [
   'Instagram is the only channel producing reach today. It generated 99% of all views; TikTok videos have a median of 1 view.',
   'Instagram reach is concentrated: 4 reels delivered 71% of Instagram views, and one reel ("Your boss is using AI…") collected 70% of all Instagram likes.',

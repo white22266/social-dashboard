@@ -12,8 +12,12 @@ Rules:
   - Instagram shares are not exposed publicly -> null.
   - Duplicates are removed by platform + native post id.
   - Thumbnails are downloaded to public/thumbnails/ because CDN URLs expire.
+  - Merge: posts already in social-data.json that were not in this scrape are kept with their
+    last known metrics (daily runs only fetch the newest posts). Each post records metricsAsOf.
+  - Safety: if a platform returns 0 posts while the dataset already has some, the run aborts
+    without touching social-data.json (pass --force to override).
 
-Usage: python3 scripts/normalize.py [--no-thumbs]
+Usage: python3 scripts/normalize.py [--no-thumbs] [--force]
 """
 import json
 import os
@@ -117,9 +121,14 @@ def download_thumb(post):
             req = urllib.request.Request(src, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=30) as r, open(dest, "wb") as f:
                 f.write(r.read())
-            # macOS: shrink + convert to jpeg (TikTok covers may be webp/heic)
-            subprocess.run(["sips", "-s", "format", "jpeg", "-Z", "480", dest, "--out", dest],
-                           capture_output=True, check=False)
+            # shrink + convert to jpeg (TikTok covers may be webp/heic); skipped if no tool exists
+            for cmd in (["sips", "-s", "format", "jpeg", "-Z", "480", dest, "--out", dest],
+                        ["magick", dest, "-resize", "480x480>", "jpeg:" + dest]):
+                try:
+                    subprocess.run(cmd, capture_output=True, check=True)
+                    break
+                except (FileNotFoundError, subprocess.CalledProcessError):
+                    continue
         except Exception as e:  # expired URL etc. -> leave thumbnail null
             print(f"  thumbnail failed for {post['id']}: {e}", file=sys.stderr)
             if os.path.exists(dest):
@@ -162,6 +171,23 @@ def main():
         if x.get("id") and f"tt_{x['id']}" not in seen:
             p = tt_post(x); seen.add(p["id"]); posts.append(p)
     duplicates_removed = len(ig_raw) + len(tt_raw) - len(posts)
+    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    for p in posts:
+        p["metricsAsOf"] = now
+
+    # merge with the previous dataset
+    previous = json.load(open(OUT)) if os.path.exists(OUT) else {"posts": [], "meta": {}}
+    for platform in ("instagram", "tiktok"):
+        new_n = sum(p["platform"] == platform for p in posts)
+        old_n = sum(p["platform"] == platform for p in previous["posts"])
+        if new_n == 0 and old_n > 0 and "--force" not in sys.argv:
+            sys.exit(f"ABORT: scrape returned 0 {platform} posts (had {old_n}). social-data.json left unchanged.")
+    kept = 0
+    for old in previous["posts"]:
+        if old["id"] not in seen:
+            old.setdefault("metricsAsOf", previous.get("meta", {}).get("collectedAt"))
+            old.pop("crossPostOf", None); old.pop("crossPostedAs", None)
+            posts.append(old); seen.add(old["id"]); kept += 1
 
     for p in posts:
         p.setdefault("crossPostOf", None)
@@ -169,6 +195,8 @@ def main():
     link_cross_posts(posts)
 
     for p in posts:
+        if "thumbnailSource" not in p:  # carried over from the previous dataset
+            continue
         if thumbs:
             download_thumb(p)
         else:
@@ -176,9 +204,12 @@ def main():
     posts.sort(key=lambda p: p["publishedAt"] or "", reverse=True)
 
     tt_author = (tt_raw[0].get("authorMeta") if tt_raw else None) or {}
+    prev_acc = previous.get("meta", {}).get("accounts", {})
+    prev_ig, prev_tt = prev_acc.get("instagram", {}), prev_acc.get("tiktok", {})
     data = {
         "meta": {
-            "collectedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "collectedAt": now,
+            "postsCarriedOver": kept,
             "analysisTimezone": "Asia/Kuala_Lumpur",
             "duplicatesRemoved": duplicates_removed,
             "accounts": {
@@ -186,16 +217,16 @@ def main():
                     "handle": "ainchors.ai.fintech",
                     "profileUrl": "https://www.instagram.com/ainchors.ai.fintech/",
                     "source": "apify/instagram-scraper",
-                    "postsOnProfile": num(profile.get("postsCount")) if profile else None,
-                    "followers": num(profile.get("followersCount")) if profile else None,
+                    "postsOnProfile": num(profile.get("postsCount")) if profile else prev_ig.get("postsOnProfile"),
+                    "followers": num(profile.get("followersCount")) if profile else prev_ig.get("followers"),
                     "postsCollected": sum(p["platform"] == "instagram" for p in posts),
                 },
                 "tiktok": {
                     "handle": "ainchors.ai.fintech",
                     "profileUrl": "https://www.tiktok.com/@ainchors.ai.fintech",
                     "source": "clockworks/tiktok-scraper",
-                    "postsOnProfile": num(tt_author.get("video")),
-                    "followers": num(tt_author.get("fans")),
+                    "postsOnProfile": num(tt_author.get("video")) if tt_author else prev_tt.get("postsOnProfile"),
+                    "followers": num(tt_author.get("fans")) if tt_author else prev_tt.get("followers"),
                     "postsCollected": sum(p["platform"] == "tiktok" for p in posts),
                 },
             },
@@ -211,7 +242,9 @@ def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
-    print(f"wrote {len(posts)} posts ({duplicates_removed} duplicates removed) -> {os.path.relpath(OUT, ROOT)}")
+    new_ids = sorted(p["id"] for p in posts if p["id"] not in {q["id"] for q in previous["posts"]})
+    print(f"wrote {len(posts)} posts ({duplicates_removed} duplicates removed, {kept} carried over from previous data) -> {os.path.relpath(OUT, ROOT)}")
+    print("new posts:", ", ".join(new_ids) if new_ids else "none")
 
 
 if __name__ == "__main__":

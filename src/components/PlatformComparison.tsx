@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import type { Analysis, GroupRow } from '../lib/analytics'
 import type { Dataset, EnrichedPost, Platform } from '../lib/types'
 import { firstLine, fmtNum, fmtRate, NA } from '../lib/format'
-import { platformNarrative } from '../data/insights'
+import { headline, platformNarrative } from '../data/insights'
 import { Claim, Section } from './ui'
 import { PostThumb } from './PostCard'
 
@@ -52,8 +52,8 @@ export default function PlatformComparison({ a, data, topicLabel }: { a: Analysi
       id="platforms"
       number="02"
       eyebrow="Instagram vs TikTok"
-      title="Two channels at different stages"
-      intro="Instagram is producing reach with the occasional breakout. TikTok has not started distributing yet. The same scripts show the gap most clearly."
+      title={headline.platformTitle}
+      intro={headline.platformIntro}
     >
       <div className="overflow-hidden rounded-xl border border-line bg-card">
         <div className="grid grid-cols-[1fr_auto_1fr] border-b border-line">

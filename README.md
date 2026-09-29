@@ -22,9 +22,15 @@ npx tsx scripts/report.ts   # print every calculated metric in the terminal
 
 ## Refreshing the data
 
+The refresh button is the **"Refresh social dashboard"** task in the Claude app (Scheduled → Run now).
+It follows [REFRESH.md](REFRESH.md): full Apify scrape → Claude re-classifies new posts and rewrites
+`src/data/insights.ts` against the fresh numbers → build → `git push` → GitHub Pages redeploys
+https://dashboard.angiefoong.com. It costs about $0.24 of Apify credit per run.
+
+Manual equivalent (data only; the commentary is not rewritten):
+
 ```bash
-export APIFY_TOKEN=...            # or put the token in .apify_token (git-ignored)
-bash scripts/fetch_apify.sh       # re-scrapes both profiles, then runs normalize.py
+bash scripts/fetch_apify.sh --full   # or without --full: newest 25 IG + 10 TikTok, merged into existing data
 ```
 
 ## Data rules

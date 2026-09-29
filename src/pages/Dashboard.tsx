@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import rawData from '../data/social-data.json'
 import rawNotes from '../data/annotations.json'
-import { BASED_ON_COLLECTED_AT } from '../data/insights'
+import { BASED_ON_COLLECTED_AT, headline } from '../data/insights'
 import { analyze } from '../lib/analytics'
 import type { Annotations, Dataset } from '../lib/types'
 import { fmtDate } from '../lib/format'
@@ -55,7 +55,7 @@ export default function Dashboard() {
         <header className="pt-14 pb-14 sm:pt-20 sm:pb-20">
           <div className="eyebrow">Content performance review · Instagram & TikTok</div>
           <h1 className="mt-5 max-w-4xl font-serif text-[2.7rem] leading-[1.05] font-medium tracking-tight text-ink sm:text-[4.2rem]">
-            Instagram is working. TikTok hasn't started yet.
+            {headline.title}
           </h1>
           <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-ink-2">
             An evidence-first review of every public post from @{data.meta.accounts.instagram.handle}: what performs, what doesn't, and what to test next.
