@@ -1,0 +1,17 @@
+# Password-protected trigger for the dashboard's Refresh button.
+# Secrets (set with `npx wrangler secret put NAME`, never committed):
+#   REFRESH_PASSWORD  the password typed on the website
+#   GITHUB_TOKEN      fine-grained token: repo white22266/social-dashboard, "Actions: Read and write" only
+name = "social-dashboard-refresh"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[vars]
+GITHUB_REPO = "white22266/social-dashboard"
+WORKFLOW = "request-refresh.yml"
+ALLOWED_ORIGINS = "https://dashboard.angiefoong.com,http://localhost:5173,http://localhost:5178"
+
+# failed-attempt counters and the refresh cooldown
+[[kv_namespaces]]
+binding = "GUARD"
+id = "REPLACE_WITH_KV_ID"

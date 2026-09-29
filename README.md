@@ -39,6 +39,23 @@ Log: `~/Library/Logs/social-dashboard-refresh.log`. Watcher: `bash scripts/insta
 
 By hand: `bash scripts/refresh.sh`. Data only: `bash scripts/fetch_apify.sh --full`.
 
+## Password-protected Refresh button (Cloudflare Worker)
+
+`worker/` is a tiny Cloudflare Worker: the site POSTs the password there, the Worker compares it with the
+`REFRESH_PASSWORD` secret (5 wrong tries per IP → 15-minute lock; 10-minute cooldown between refreshes)
+and, if correct, dispatches the *Request refresh* workflow with a fine-grained `GITHUB_TOKEN` secret
+(this repo only, Actions read/write). The password is never in the site code or this repository.
+The site finds the Worker through `src/lib/config.ts` (`REFRESH_API`).
+
+```bash
+cd worker && npm install
+npx wrangler login
+npx wrangler kv namespace create GUARD    # put the id in wrangler.toml
+npx wrangler deploy
+npx wrangler secret put REFRESH_PASSWORD
+npx wrangler secret put GITHUB_TOKEN
+```
+
 ## Data rules
 
 - Missing metrics are `null`, never 0. Instagram share counts are not public, so Instagram engagement = likes + comments.

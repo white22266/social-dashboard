@@ -242,6 +242,9 @@ def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
+    # tiny file the page polls after a refresh to know when the new build is live
+    with open(os.path.join(ROOT, "public", "data-version.json"), "w") as f:
+        json.dump({"collectedAt": now}, f)
     new_ids = sorted(p["id"] for p in posts if p["id"] not in {q["id"] for q in previous["posts"]})
     print(f"wrote {len(posts)} posts ({duplicates_removed} duplicates removed, {kept} carried over from previous data) -> {os.path.relpath(OUT, ROOT)}")
     print("new posts:", ", ".join(new_ids) if new_ids else "none")

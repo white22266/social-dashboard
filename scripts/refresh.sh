@@ -34,7 +34,7 @@ npm run -s lint
 npm run -s build >/dev/null
 
 log "4/4 publishing"
-git add src/data public/thumbnails
+git add src/data public/thumbnails public/data-version.json
 if git diff --cached --quiet; then
   log "nothing changed; nothing to publish"
 else
