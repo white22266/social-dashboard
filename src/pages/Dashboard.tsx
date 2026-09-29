@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import rawData from '../data/social-data.json'
 import rawNotes from '../data/annotations.json'
-import { BASED_ON_COLLECTED_AT, headline } from '../data/insights'
+import { BASED_ON_COLLECTED_AT, GENERATED_BY, headline } from '../data/insights'
 import { analyze } from '../lib/analytics'
 import type { Annotations, Dataset } from '../lib/types'
 import { fmtDate } from '../lib/format'
@@ -16,6 +16,8 @@ import HookAnalysis from '../components/HookAnalysis'
 import Recommendations from '../components/Recommendations'
 
 const data = rawData as Dataset
+// GitHub's "Run workflow" page; only repository collaborators can start a refresh
+const REFRESH_URL = 'https://github.com/white22266/social-dashboard/actions/workflows/request-refresh.yml'
 const notes = rawNotes as Annotations
 
 const NAV = [
@@ -65,10 +67,24 @@ export default function Dashboard() {
             <div><dt className="text-muted">Source</dt><dd className="font-medium text-ink">Apify public scrapers</dd></div>
             <div><dt className="text-muted">Posts</dt><dd className="font-medium text-ink">{a.overall.posts} ({a.byPlatform.instagram?.posts ?? 0} IG · {a.byPlatform.tiktok?.posts ?? 0} TikTok)</dd></div>
             <div><dt className="text-muted">Time zone</dt><dd className="font-medium text-ink">Kuala Lumpur (UTC+8)</dd></div>
+            <div><dt className="text-muted">AI analysis</dt><dd className="font-medium text-ink">{GENERATED_BY} · {fmtDate(BASED_ON_COLLECTED_AT)}</dd></div>
           </dl>
+          <div className="mt-7 flex max-w-3xl flex-wrap items-center gap-x-4 gap-y-2">
+            <a
+              href={REFRESH_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg bg-ink px-4 py-2.5 text-[13.5px] font-medium text-white transition-colors hover:bg-accent"
+            >
+              <span aria-hidden>↻</span> Refresh data &amp; AI analysis
+            </a>
+            <span className="text-[12.5px] leading-snug text-muted">
+              Opens GitHub. Press <strong className="text-ink-2">Run workflow</strong> (owner only). New data and a rewritten analysis appear here about 5–10 minutes later.
+            </span>
+          </div>
           {(stale || autoCount > 0) && (
             <div className="mt-8 max-w-3xl rounded-xl border border-warn/40 bg-warn-soft px-5 py-4 text-[13.5px] text-ink">
-              {stale && <p><strong>The data has been refreshed.</strong> All numbers and charts are current, but the written commentary describes the {fmtDate(BASED_ON_COLLECTED_AT)} snapshot. Review <code>src/data/insights.ts</code>.</p>}
+              {stale && <p><strong>The AI commentary is from an earlier refresh.</strong> All numbers and charts are current ({fmtDate(data.meta.collectedAt)}), but the written analysis still describes the {fmtDate(BASED_ON_COLLECTED_AT)} data because the last AI rewrite did not pass the fact check.</p>}
               {autoCount > 0 && <p className={stale ? 'mt-2' : ''}>{autoCount} new posts were classified by keyword rules. Check their topics and hooks in <code>src/data/annotations.json</code>.</p>}
             </div>
           )}

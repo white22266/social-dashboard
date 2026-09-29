@@ -1,8 +1,15 @@
 # Refresh playbook: data + AI analysis
 
-Run this when the owner presses **Run now** on the "Refresh social dashboard" task in the Claude app.
-Goal: fresh Apify data, a re-written analysis that matches the new numbers, and the live site
-(https://dashboard.angiefoong.com) updated. Work in `~/Services/social-dashboard`.
+There are two ways to refresh https://dashboard.angiefoong.com:
+
+1. **Website button (normal path, fully automatic).** "Refresh data & AI analysis" on the site opens
+   the *Request refresh* GitHub workflow; the owner presses **Run workflow**. Within a minute the Mac's
+   launchd watcher (`scripts/refresh_watcher.sh`, installed by `scripts/install_watcher.sh`) runs
+   `scripts/refresh.sh`: Apify scrape → Ollama (Kimi K3, thinking) rewrites `src/data/insights.json` →
+   `scripts/validate_insights.py` rejects any number not found in the computed facts → build → push.
+   Log: `~/Library/Logs/social-dashboard-refresh.log`.
+2. **Claude review (this playbook).** The "Refresh social dashboard" task in the Claude app, for a
+   deeper hand-checked rewrite. Follow the steps below.
 
 ## 0. Start clean
 
@@ -42,13 +49,12 @@ post's existing labels unchanged.
 
 Re-run `npx tsx scripts/report.ts > /tmp/social-report.txt` afterwards.
 
-## 4. Rewrite the analysis: `src/data/insights.ts`
+## 4. Rewrite the analysis: `src/data/insights.json`
 
-Keep every export name and type exactly as they are (`BASED_ON_COLLECTED_AT`, `headline`,
-`executiveSummary`, `platformNarrative`, `postNotes`, `topicNotes`, `quadrantNotes`,
-`patternNotes`, `hookNotes`, `recommendations`). Update the content:
+Keep the JSON structure exactly as it is (typed in `src/data/insights.ts`). Update the content:
 
-- Set `BASED_ON_COLLECTED_AT` to the date part of `meta.collectedAt` in `social-data.json`.
+- Set `basedOnCollectedAt` to the date part of `meta.collectedAt` in `social-data.json`, and
+  `generatedBy` to `"Claude (manual review)"`.
 - **Every number in the file must match the fresh report.** Go through the file line by line and
   re-check each figure (views, medians, rates, counts, percentages, dates, day counts).
 - Re-evaluate every claim. Delete claims that are no longer true and add new findings the data
@@ -70,10 +76,12 @@ views" in TopicPerformance and ContentPatterns, and the zero-view TikTok paragra
 ## 5. Verify
 
 ```bash
+npx tsx scripts/facts.ts > /tmp/facts.json
+python3 scripts/validate_insights.py /tmp/facts.json src/data/insights.json src/data/social-data.json
 npx tsc -b && npm run lint && npm run build
 ```
 
-All three must pass. Then do a final read of `insights.ts` against `/tmp/social-report.txt`.
+All must pass (the validator lists every number it cannot trace to the facts).
 
 ## 6. Publish
 

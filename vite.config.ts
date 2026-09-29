@@ -6,4 +6,5 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   base: './',
   plugins: [react(), tailwindcss()],
+  build: { chunkSizeWarningLimit: 900 }, // single-page dashboard; Recharts is most of the bundle
 })

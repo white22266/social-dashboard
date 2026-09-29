@@ -1,0 +1,22 @@
+name: Request refresh
+
+# Started from the dashboard's "Refresh" button (GitHub's "Run workflow" page).
+# Only repository collaborators can run it. The run itself does nothing but record the request:
+# the owner's Mac (scripts/refresh_watcher.sh) sees it within a minute, then scrapes fresh data,
+# rewrites the AI analysis with Ollama, and pushes; the deploy workflow publishes the result.
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Record the request
+        run: |
+          {
+            echo "## Refresh requested by @${{ github.actor }}"
+            echo "The Mac picks this up within about a minute. The site updates about 5–10 minutes later."
+            echo "Progress on the Mac: ~/Library/Logs/social-dashboard-refresh.log"
+          } >> "$GITHUB_STEP_SUMMARY"
